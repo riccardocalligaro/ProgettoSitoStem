@@ -1,0 +1,172 @@
+<!-- progetto realizzato da Riccardo Calligaro e Filippo Veggo versione 1.0
+tutti i font e le icone utilizzate sono legalmente utilizzabili (Google Font e Font Awesome)
+
+HTML e CSS realizzato da Riccardo Calligaro e Filippo Veggo
+Javascript realizzato da Riccardo Calligaro
+
+progetto informatica 2017 -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!-- link ai file javcascript e css contenuti nella cartella -->
+    <link rel="stylesheet" href="./css/master.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <!-- font da google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+
+    <!-- librerie di vario tipo -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/master.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <meta charset="utf-8">
+    <title>Stem | Home</title>
+  </head>
+  <body>
+
+<!-- parte superiore del sito web, div contenente la navbar, e i form -->
+
+<header>
+
+
+
+  <div class="container_superiore">
+
+<!-- logo opzionale
+    <div class="logo">
+    <img src="./images/logo.png" alt="">
+    <h1>STEM</h1>
+    </div>
+-->
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">home</li></a>
+        <li><a href="#">scopri</li></a>
+        <li><a href="#">galleria</li> </a>
+      </ul>
+    </nav>
+
+    <div class="button_mobile">
+      <a href="#" id="nav_bar_mobile_button"><i class="fa fa-bars fa-2x mobile_open"  id="bottone_mobile"aria-hidden="true"></i></a>
+    </div>
+
+<div class="button_close">
+<i class="fa fa-times-circle fa-2x" id="close_icon" aria-hidden="true"></i>
+<script type="text/javascript">
+$("#close_icon").hide()
+</script>
+</div>
+
+
+
+    <div class="navbar_mobile">
+      <li><a href="index.html">home</li></a>
+      <li><a href="#">scopri</li></a>
+      <li><a href="#">galleria</li> </a>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+       $(".navbar_mobile").hide();
+   </script>
+
+
+  <div class="testo">
+<div class="nome_div">
+<!-- prima pagina dell'header -->
+  <h2 id="mostra">ciao, </h2>
+  <input id="nome"type="text" name="" value="">
+
+<!-- seconda pagina dell'header -->
+
+  <h2 id="anni_testo">Quanti anni hai </h2>
+  <script type="text/javascript">
+       $("#anni_testo").hide();
+   </script>
+
+  <input id="anni" type="text" name="" value="">
+  <script type="text/javascript">
+       $("#anni").hide();
+   </script>
+
+   <img id="clementino_2" src="./images/clementino_2.jpg" alt="" class="img_header">
+   <script type="text/javascript">
+        $("#clementino_2").hide();
+    </script>
+
+
+  <a href="https://www.arduino.cc/"><img id="14anni" src="./images/14anni.png" alt="" class="img_header"></a>
+    <script type="text/javascript">
+         $("#14anni").hide();
+     </script>
+
+     <img id="10anni" src="./images/10anni.png" alt="" class="img_header">
+     <script type="text/javascript">
+          $("#10anni").hide();
+      </script>
+</div>
+
+  </div>
+<button class="bottone_header" id="invia_nome"type="button" name="button">Invia</button>
+<button class="bottone_header" id="invia_anni"type="button" name="button">Invia anni</button>
+<script type="text/javascript">
+     $("#invia_anni").hide();
+ </script>
+</header>
+
+
+<!-- inizio contenuto centrale del sito wev -->
+
+<div class="body_centrale">
+
+<div class="scopri_div">
+  <h3>Scopri</h3>
+  <h1 id="scopri">Scopri le potenzialita' di Stem!</h1>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at felis mauris. Nam lacinia nulla lorem, vel molestie arcu gravida ut. Sed sed venenatis lorem, sit amet pharetra ligula. Ut eget eros sit amet tellus interdum mattis. Donec gravida, purus ullamcorper ultrices cursus, massa libero venenatis lacus, ut iaculis neque lacus et ipsum. Quisque tempus scelerisque ornare.</p>
+</div>
+
+
+<div class="caselle">
+  <div class="casella" id="casella_sx">
+  <a href="#"><img class="img_caselle" src="./images/scienze.png" alt=""></a>
+  <h1>Scienza</h1>
+  <h2>Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</h2>
+  </div>
+
+  <div class="casella">
+  <a href="#"><img class="img_caselle" src="./images/tecnologia.png" alt=""></a>
+  <h1>Tecnologia</h1>
+  <h2>Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</h2>
+  </div>
+
+  <div id="ingenieria"class="casella">
+  <a href="#"><img  class="img_caselle" src="./images/ingenieria.png" alt=""></a>
+  <h1>Ingenieria</h1>
+  <h2>Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</h2>
+  </div>
+  <div class="casella" id="casella_dx">
+  <a href="#"><img class="img_caselle" src="./images/matematica.png" alt=""></a>
+  <h1>Matematica</h1>
+  <h2>Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</h2>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+
+<script src="./js/header_quiz.js"></script>
+
+<footer>Ciao</footer>
+  </body>
+
+
+</html>
