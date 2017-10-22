@@ -1,11 +1,13 @@
-/* definiamo il body */
-body {
+/* reset / standardizziamo i vari elementi fondamentali */
 
+/* definiamo il body */
+
+body {
   line-height:1.5;
   margin: 0;
-
 }
 
+/* Parte superiore del sito web, header contente la lista home scopri cotnatti e il quiz*/
 .container {
 
   width: 80%;
@@ -14,22 +16,22 @@ body {
 
 }
 
-
-ul {
+/* lista  per versione web */
+.container_superiore ul {
 
    margin:0px;
    padding: 0px;
    margin-right: 200px;
 }
 
+/* sfondo sfumato nei vari tipi di verde */
 
 header {
-
-  background: #85c35d; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#85c35d, #6bbb78 ,#50b194); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#85c35d, #6bbb78 ,#50b194); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#85c35d, #6bbb78 ,#50b194); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, #90c652,#79bf69, #6bbb78); /* Standard syntax (must be last) */
+  background: #85c35d; /* Per broswer che non supportano le gradazioni */
+  background: -webkit-linear-gradient(#85c35d, #6bbb78 ,#50b194); /* Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#85c35d, #6bbb78 ,#50b194); /* Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#85c35d, #6bbb78 ,#50b194); /* Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #90c652,#79bf69, #6bbb78); /* Standard */
   color: #ffffff;
   padding-top: 30px;
   height: 450px;
@@ -37,6 +39,7 @@ header {
   margin: 0;
 }
 
+/* collegamenti nell'header */
 header a {
       font-family: 'Roboto', sans-serif;
       color:#ffffff;
@@ -45,52 +48,36 @@ header a {
 
 }
 
-
+/* stile dei singoli elementi dell'header */
 header li {
-
   float: left;
   display: inline;
   padding: 0 20px 0 20px;
-
 }
 
-
-
+/* definiamo la nav bar dell'header*/
 header nav {
-
   float: right;
   margin-top: 10px;
-
 }
 
-header .highlight, header .current a {
-color: #ffffff;
-font-weight: bold;
-
-}
-
+/* cosa compiere quando si passa con il mouse sopra gli elementi home scopri dell'header */
 header a:hover{
-
-  font-weight: bold;
+font-style: italic;
 }
 
-
-
+/* definizione della parte del quiz dell'heade r*/
 .testo {
   text-align: center;
   margin-top: 120px;
   font-family: 'Roboto', sans-serif;
 }
 
-
-.testo h1 {
-  font-size: 25px;
-}
-
+/* testo h2 del quiz (ciao, quanti anni hai) */
 .testo h2 {
   font-size: 20px;
 }
-
+/* stile della input box del quiz*/
 .testo input {
   height: 38px;
   background: #ffffff;
@@ -99,31 +86,17 @@ header a:hover{
   padding-right: 20px;
   font-family: 'Roboto', sans-serif;
   -webkit-border-radius: 40px;
--moz-border-radius: 40px;
-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
 }
 
-
-
-
-
-.animation-target {
-  display:block;
-  width:150px;
-  min-height:150px;
-  background:orange;
-  margin:5em auto;
-  padding:1em;
-
-}
-
+/* stile del quiz dove chiede il nome */
 .nome_div {
   display: inline;
   overflow: hidden;
   white-space: nowrap;
 }
-
-
+/* stile del bottone presente nell header, quiz */
 .bottone_header {
   margin-top: 20px;
   background-color: #ffffff; /* Green */
@@ -137,12 +110,29 @@ border-radius: 40px;
   border-radius: 4px;
 }
 
+/* stile delle immagini che variano in  base agli anni */
+.img_header {
+  height: 150px;
+  width: 200px;
+}
+
+
+
+/* Fine parte superiore del sito web, inizo del body centrale */
+
+
+
+
+/* Inizio parte centrale del sito web */
+
+/* stile del corpo centrale*/
 .body_centrale {
   background-color: #ffffff;
   height: 1500px;
   text-align: center;
 }
 
+/* testo in grande Scopri Stem */
 .body_centrale h1 {
   margin: 0;
   color: #525252;
@@ -150,6 +140,7 @@ border-radius: 40px;
   font-family: 'Bree Serif', serif;
 }
 
+/* testo scopri in piccolo sopra h1*/
 .body_centrale h3 {
   font-family: 'Fjalla One', sans-serif;
   color: #b6c82a;
@@ -159,16 +150,7 @@ border-radius: 40px;
   padding-top: 20px;
 }
 
-.breaker_green {
-  background-color: #87c35a;
-  margin: 0;
-  height: 6px;
-  width: 250px;
-  margin-top: 20px;
-  margin-left: 43%;
-}
-
-
+/* paragrafo del copro centrale che spiega cos'e' stem*/
 .body_centrale p {
   margin-left: 200px;
   margin-right: 200px;
@@ -176,19 +158,12 @@ border-radius: 40px;
   font-size: 25px;
   color: #8e8282;
 }
-
-footer {
-  background-color: #ffffff;
-  height: 70px;
-  text-align: center;
-  font-family: 'Bree Serif', serif;
-  color: #8e8282;
-}
-
+/* classe che verra' aggiunta con javascript quando sbagliamo qualche input */
 .button_border {
-  border: 1px solid #e74c3c;
+  border: 1px solid #e74c3c; /*rosso che contorna il bottone*/
 }
 
+/* stile delle caselle contenenti le varie materie di stem */
 .caselle {
   display: inline;
   width: 80%;
@@ -196,7 +171,7 @@ footer {
   overflow: hidden;
   margin-top: 20px;
 }
-
+/* stile della singola casella*/
 .caselle .casella {
   float: left;
   padding: 0px;
@@ -204,27 +179,23 @@ footer {
   padding-top: 100px;
   width: 20%;
 }
-.img_header {
-  height: 150px;
-  width: 200px;
-}
 
+/* la casella a sx ha un margine maggiore rispetto alle altre per motivi di progettazione*/
 #casella_sx {
   margin-left: 10%;
 }
-
-
+/* stile delle varie immagini delle caselle */
 .caselle .img_caselle {
   height: 128px;
   width: 128px;
 }
-
+/* testo che indica il nome della materia es ingenieria matematica */
 .caselle h1 {
   font-size: 20px;
   padding-top: 30px;
     color: #525252;
 }
-
+/* testo che spiega le varie materie*/
 .caselle h2 {
 font-family: 'Bree Serif', serif;
 font-size: 15px;
@@ -233,156 +204,170 @@ margin-right: 40px;
 color: #8e8282;
 }
 
-
-.img_slider {
-  height: 400px;
-  border: 10px solid #90c652;
-  border-radius: 15px;
-}
-
-.slider {
-  margin-top: 520px;
+/* footer del sito web*/
+footer {
+  background-color: #ffffff;
+  height: 70px;
   text-align: center;
+  font-family: 'Bree Serif', serif;
+  color: #8e8282;
 }
 
-.mid_container {
 
-}
+/* Fine CSS della versione per Deksotp*/
+
+
+
+/* Css per versione mobile / minore al 4k */
 @media (max-width:1350px) and (min-width:800px){
+
+/* diminiusce il font di quando lo schermo si restringe */
 .caselle h1{
   font-size: 20px;
 }
+
+/* facendo cosi ci possono stare 2 caselle es ingenieria e matemtica in una riga*/
 .caselle .casella {
   width: 40%;
 }
-
+/* creiamo la classe ingenieria che verra' applicata solo quando lo schermo si restringe, questa classe crea un margine per l'icona ingenieria essendocene 2 per riga */
 #ingenieria {
   margin-left: 10%;
 }
 
 
 }
-
-@media (max-width:802px) and (min-width:0px) {
+/* versione per telefoni*/
+@media (max-width:815px) and (min-width:0px) {
+/* si diminuisce il font */
   .caselle h1{
     font-size: 20px;
-  }
+}
+
+/* ora nei telefoni ogni casella es ingenieria occupa tutta una riga */
   .caselle .casella {
     width: 100%;
-  }
+}
 
+/* si toglie il margine dalla casella sx*/
 #casella_sx {
   margin-left: 0px;
 }
+/* diminusice il font del paragrafo */
+.body_centrale p {
+  margin-left: 40px;
+  margin-right: 40px;
 }
+
+/* non va a capo quando fa vedere l'oggetto adatto alla tua eta' */
+.nome_div {
+  display: inline;
+  overflow: hidden;
+  white-space: normal;
+  }
+
+/* margini delle scritte nel quiz*/
+.testo {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+/* bottone per chiudere la nav bar da telefono*/
+.button_close {
+  margin-top: 20px;
+}
+/* header da mobile*/
+.header_mobile {
+  background: #ffffff;
+  margin-top: 0%;
+}
+/* bottone per header*/
+.bottone_header_mobile {
+  display: none;
+}
+/* classe utilizzata con jquery che praticamente non fa mostrare qualcosa con il display none*/
+.display_nothing {
+display: none;
+}
+/* il navbrar da mobile*/
+.navbar_mobile {
+  margin-top: 50%;
+}
+/* lista home scopri da mobile */
+.navbar_mobile li {
+  float: none;
+  display:block;
+  margin-top: 20px;
+}
+/* collegamenti navbar da mobile*/
+.navbar_mobile a {
+  color: #000000;
+  font-size: 35px;
+}
+/* menu da mobile*/
+.menu {
+display: none;
+}
+/* vengono tolti tutti i margini */
+body {
+  background-color: #ffffff;
+  margin: 0;
+}
+/* chiudere la navbar da mobile*/
+.mobile_close {
+  float: none;
+  margin-right: 0px;
+  color: #000000;
+}
+/* icona di chiusura del navbar, si indica il coore*/
+#close_icon {
+  color: #000000;
+}
+/* icona di apertura da mobile*/
+.mobile_open {
+float: right;
+margin-right: 20px;
+}
+/* bottone presente solo da mobile*/
+#bottone_mobile {
+  display: block;
+  color: #ffffff;
+}
+}
+
+/* query che nasconde il tasto che compare solo nella versione per telefoni */
 @media (max-width:5000px) and (min-width:630px) {
 .fa {
   display: none;
 }
+
 }
 
-
+/* versione per telefoni 2*/
 
 @media (max-width:1000px) and (min-width:0px) {
+/* si diminusice il font della scritta scopri*/
 #scopri {
   font-size: 35px;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-.breaker_green {
-  display: none;
-}
-
+/* si diminusice il font del paragrafo che spiega cos'e stem*/
 .body_centrale p {
   font-size: 20px;
   margin-left: 20px;
   margin-right: 20px;
 }
-
-
 }
 
+/* reset di alcuni elementi per una versione da tablet*/
 @media (max-width:1070px) and (min-width:810px) {
-  body {margin: 0;}
+  body {
+    margin: 0;
+  }
 }
-ul {
+.container_superiore ul {
   margin-right: 0;
 }
-@media (max-width:815px) and (min-width:0px) {
-  /* classi del navbar mobile */
-.body_centrale p {
-  margin-left: 40px;
-  margin-right: 40px;
-}
-  .nome_div {
-    display: inline;
-    overflow: hidden;
-    white-space: normal;
-  }
 
-.testo {
-  margin-left: 20%;
-  margin-right: 20%;
-
-}
-.button_close {
-  margin-top: 20px;
-}
-
-.header_mobile {
-  background: #ffffff;
-  margin-top: 0%;
-}
-
-.bottone_header_mobile {
-  display: none;
-}
-
-.display_nothing {
-display: none;
-}
-
-
-.navbar_mobile {
-  margin-top: 50%;
-}
-
-.navbar_mobile li {
-  float: none;
-  display:block;
-  margin-top: 20px;
-}
-
-.navbar_mobile a {
-  color: #000000;
-  font-size: 35px;
-}
-.menu {
-display: none;
-}
-body {
-  background-color: #ffffff;
-  margin: 0;
-}
-
-.mobile_close {
-  float: none;
-  margin-right: 0px;
-  color: #000000;
-}
-
-#close_icon {
-  color: #000000;
-}
-.mobile_open {
-float: right;
-margin-right: 20px;
-}
-
-#bottone_mobile {
-  display: block;
-  color: #ffffff;
-}
-
-}
+/* fine CSS */
