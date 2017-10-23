@@ -116,6 +116,21 @@ font-style: italic;
   width: 200px;
 }
 
+.slider_div {
+  background: #85c35d; /* Per broswer che non supportano le gradazioni */
+  background: -webkit-linear-gradient(#85c35d, #6bbb78 ,#50b194); /* Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#85c35d, #6bbb78 ,#50b194); /* Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#85c35d, #6bbb78 ,#50b194); /* Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #90c652,#79bf69, #6bbb78); /* Standard */
+  text-align: center;
+}
+
+.slider_div img {
+  width: 30%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
 
 
 /* Fine parte superiore del sito web, inizo del body centrale */
@@ -128,7 +143,7 @@ font-style: italic;
 /* stile del corpo centrale*/
 .body_centrale {
   background-color: #ffffff;
-  height: 1500px;
+  height: 750px;
   text-align: center;
 }
 
@@ -204,6 +219,30 @@ margin-right: 40px;
 color: #8e8282;
 }
 
+/* slider image */
+
+#freccia_destra  {
+  margin-right: 200px;
+  float: right;
+  margin-top: 200px;
+  display: initial;
+}
+
+#freccia_sinistra {
+  float: left;
+  margin-top: 200px;
+  margin-left: 200px;
+  display: initial;
+}
+
+.freccia {
+  color: #ffffff;
+}
+
+.freccia:hover{
+  color: #000000;
+}
+
 /* footer del sito web*/
 footer {
   background-color: #ffffff;
@@ -219,7 +258,7 @@ footer {
 
 
 /* Css per versione mobile / minore al 4k */
-@media (max-width:1350px) and (min-width:800px){
+@media (max-width:1350px) and (min-width:815px){
 
 /* diminiusce il font di quando lo schermo si restringe */
 .caselle h1{
@@ -338,6 +377,10 @@ margin-right: 20px;
 @media (max-width:5000px) and (min-width:630px) {
 .fa {
   display: none;
+}
+
+#freccia_destra {
+  display: initial;
 }
 
 }

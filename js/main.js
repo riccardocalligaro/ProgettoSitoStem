@@ -214,3 +214,18 @@ $('#nav_bar_mobile_button').fadeIn(1000)
 
 
 });
+
+
+
+
+//slider
+
+
+$("#freccia_destra").click(function() {
+
+  $("#img_slider_1").hide()
+  $("#img_slider_2").show()
+
+
+
+});
