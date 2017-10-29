@@ -19,14 +19,30 @@ progetto informatica 2017/2018 -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/slick.css"/>
+<link rel="stylesheet" type="text/css" href="./css/slick-theme.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- librerie di vario tipo -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
     <link rel="stylesheet" href="./css/master.css">
     <link rel="stylesheet" href="./css/animate.css">
     <meta charset="utf-8">
     <title>Stem | Home</title>
+
+
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+      <script>
+        $(document).ready(function(){
+          $('.slider').bxSlider();
+        });
+      </script>
+
+
   </head>
   <body>
 
@@ -171,6 +187,8 @@ $("#close_icon").hide()
   <div class="casella">
   <a href="#"><img class="img_caselle" src="./images/tecnologia.png" alt=""></a>
   <h1>Tecnologia</h1>
+
+
   <h2>Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</h2>
   </div>
 <!-- ingenieria -->
@@ -190,32 +208,28 @@ $("#close_icon").hide()
 <!-- slideshow delle immagini -->
 </div>
 
-<div class="slider_div">
+<div class="grey_div">
 
-<i  id="freccia_sinistra" class="fa fa-arrow-left fa-4x freccia" aria-hidden="true"></i>
-<div class="immagini">
-  <img id="img_slider_1"src="./images/sample_1.jpg" alt="">
-  <img id="img_slider_2"src="./images/sample_2.jpg" alt="">
-  <script type="text/javascript">
-  $("#img_slider_2").hide()
-  </script>
-  <img id="img_slider_3"src="./images/sample_3.jpg" alt="">
-  <script type="text/javascript">
-  $("#img_slider_3").hide()
-  </script>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur faucibus finibus sapien, eget rutrum quam bibendum a. Ut tincidunt metus non urna tincidunt, a sollicitudin orci ultrices. Nam tristique pharetra ornare. Sed posuere ac urna et tincidunt. Sed consequat cursus tempus. Donec vehicula leo nec ante maximus consectetur. Nam eu orci metus. Suspendisse imperdiet velit ac orci iaculis venenatis.
 
-  <i  id="freccia_destra" class="fa fa-arrow-right fa-4x freccia" aria-hidden="true"></i>
+Nulla fermentum placerat consectetur. Phasellus lorem purus, iaculis quis blandit sed, vehicula et ex. Maecenas accumsan nisi posuere urna tristique vestibulum. Integer a molestie lacus, eget sollicitudin enim. Vestibulum imperdiet, erat sit amet luctus ullamcorper, tellus magna lobortis orci, ut luctus nisi tellus ac elit. Sed pretium eros ante, ac egestas lacus cursus et. Aliquam posuere erat arcu, et facilisis nisl posuere ac. Proin sagittis consequat ex. Vivamus justo purus, porta et luctus hendrerit, finibus non nisl.</p>
 </div>
 
-
-
-
+<div class="slider">
+  <div><img src="./images/sample_1.jpg" alt=""></div>
+  <div><img src="./images/sample_2.jpg" alt=""></div>
+  <div><img src="./images/sample_3.jpg" alt=""></div>
 </div>
+
 
 <!-- fine del body centrale -->
 
 <!-- footer del sito -->
-<footer> <h1>Realizzato da Riccardo Calligaro e Filippo Veggo</h1></footer>
+<footer>
+<h1>Realizzato da Riccardo Calligaro e Filippo Veggo ©</h1>
+<h3>Classe 2E ITIS Zuccante</h3>
+<h2>Tutti i permessi di vario genere per utilizzare le immagini e librerie presenti in questo sito sono presenti sulla pagina <a href="autorizzazioni.html">autorizzazioni</a></h2>
+</footer>
   </body>
 
 

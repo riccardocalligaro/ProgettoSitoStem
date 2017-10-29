@@ -1,4 +1,33 @@
-// funzione eseguita quando si preme il pulsante invia nome,
+/**
+ * jQuery.browser.mobile (http://detectmobilebrowser.com/)
+ *
+ * jQuery.browser.mobile will be true if the browser is a mobile device
+ *
+ **/
+ var isMobile = {
+     Android: function() {
+         return navigator.userAgent.match(/Android/i);
+     },
+     BlackBerry: function() {
+         return navigator.userAgent.match(/BlackBerry/i);
+     },
+     iOS: function() {
+         return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+     },
+     Opera: function() {
+         return navigator.userAgent.match(/Opera Mini/i);
+     },
+     Windows: function() {
+         return navigator.userAgent.match(/IEMobile/i);
+     },
+     any: function() {
+         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+     }
+ };
+if (isMobile.any()) {
+
+}
+
   $('#invia_nome').click(function(){
     // salva nella variabile nome il nome
     var nome = $("#nome").val();
@@ -178,6 +207,10 @@ $('#nav_bar_mobile_button').click(function(){
  $("#close_icon").show()
  $("#close_icon").addClass("animated bounceInDown")
  $(".testo").addClass("display_nothing")
+ $(".grey_div").addClass("display_nothing")
+ $(".slider").addClass("display_nothing")
+ $(".bx-wrapper").addClass("display_nothing")
+
 
 
 });
@@ -205,8 +238,13 @@ $("#mostra").addClass('animated bounceInUp')
 $("#nome").removeClass("display_nothing")
 $("#nome").addClass('animated bounceInUp')
 $("header").removeClass("header_mobile")
+$(".slider").removeClass("display_nothing")
+$(".bx-wrapper").removeClass("display_nothing")
+
 $("header").addClass('animated bounceInUp')
 $(".testo").addClass("animated bounceInUp")
+ $(".grey_div").removeClass("display_nothing")
+ $(".grey_div").addClass("animated bounceInUp")
 $('.button_mobile').removeAttr('id','button_close');
 $("#close_icon").hide()
 $("#nav_bar_mobile_button").removeClass("display_nothing")

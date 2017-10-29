@@ -64,6 +64,8 @@ header nav {
 /* cosa compiere quando si passa con il mouse sopra gli elementi home scopri dell'header */
 header a:hover{
 font-style: italic;
+color: #ffffff;
+text-decoration: none;
 }
 
 /* definizione della parte del quiz dell'heade r*/
@@ -88,6 +90,7 @@ font-style: italic;
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
   border-radius: 40px;
+  color: #000000;
 }
 
 /* stile del quiz dove chiede il nome */
@@ -116,21 +119,7 @@ font-style: italic;
   width: 200px;
 }
 
-.slider_div {
-  background: #85c35d; /* Per broswer che non supportano le gradazioni */
-  background: -webkit-linear-gradient(#85c35d, #6bbb78 ,#50b194); /* Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#85c35d, #6bbb78 ,#50b194); /* Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#85c35d, #6bbb78 ,#50b194); /* Firefox 3.6 to 15 */
-  background: linear-gradient(to right, #90c652,#79bf69, #6bbb78); /* Standard */
-  text-align: center;
-}
 
-.slider_div img {
-  width: 30%;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  border-radius: 10px;
-}
 
 
 /* Fine parte superiore del sito web, inizo del body centrale */
@@ -142,8 +131,9 @@ font-style: italic;
 
 /* stile del corpo centrale*/
 .body_centrale {
+  margin-bottom: 50px;
   background-color: #ffffff;
-  height: 750px;
+  height: auto;
   text-align: center;
 }
 
@@ -180,11 +170,11 @@ font-style: italic;
 
 /* stile delle caselle contenenti le varie materie di stem */
 .caselle {
-  display: inline;
-  width: 80%;
+
   margin: auto;
   overflow: hidden;
   margin-top: 20px;
+  height: auto;
 }
 /* stile della singola casella*/
 .caselle .casella {
@@ -219,43 +209,206 @@ margin-right: 40px;
 color: #8e8282;
 }
 
-/* slider image */
 
-#freccia_destra  {
-  margin-right: 200px;
-  float: right;
-  margin-top: 200px;
-  display: initial;
-}
-
-#freccia_sinistra {
-  float: left;
-  margin-top: 200px;
-  margin-left: 200px;
-  display: initial;
-}
-
-.freccia {
-  color: #ffffff;
-}
-
-.freccia:hover{
-  color: #000000;
-}
 
 /* footer del sito web*/
 footer {
-  background-color: #ffffff;
-  height: 70px;
+  background: #85c35d; /* Per broswer che non supportano le gradazioni */
+  background: -webkit-linear-gradient(#85c35d, #6bbb78 ,#50b194); /* Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#85c35d, #6bbb78 ,#50b194); /* Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#85c35d, #6bbb78 ,#50b194); /* Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #90c652,#79bf69, #6bbb78); /* Standard */
+  color: #ffffff;
+  padding-top: 15px;
+  height: auto;
+  padding-bottom: 30px;
   text-align: center;
   font-family: 'Bree Serif', serif;
-  color: #8e8282;
+}
+
+footer h1 {
+  font-size: 25px;
+}
+
+footer h3 {
+  font-size: 20px;
+}
+
+footer h2 {
+  font-size: 16px;
+}
+
+footer h2 a {
+  text-decoration: none;
+}
+.grey_div {
+  background: #85c35d; /* Per broswer che non supportano le gradazioni */
+  background: -webkit-linear-gradient(#85c35d, #6bbb78 ,#50b194); /* Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#85c35d, #6bbb78 ,#50b194); /* Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#85c35d, #6bbb78 ,#50b194); /* Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #90c652,#79bf69, #6bbb78); /* Standard */
+  color: #ffffff;
+  padding-top: 15px;
+  height: auto;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.grey_div h1 {
+  margin-top: 0;
+  color: #ffffff;
+  font-size: 53px;
+  font-family: 'Bree Serif', serif;
+}
+/* Fine CSS della versione per Deksotp*/
+
+/* testo scopri in piccolo sopra h1*/
+
+
+/* paragrafo del copro centrale che spiega cos'e' stem*/
+.grey_div p {
+  margin-top: 20px;
+margin-left: 200px;
+margin-right: 200px;
+font-family: 'Bree Serif', serif;
+font-size: 20px;
+color: #ffffff;
+
+}
+
+.bx-wrapper {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 100px;
+}
+
+.header_mobile_android {
+  background-color: red;
+}
+
+/* versione Android */
+
+.caselle_mobile h1{
+  font-size: 20px;
+}
+
+/* ora nei telefoni ogni casella es ingenieria occupa tutta una riga */
+.caselle_mobile .casella {
+  width: 100%;
+}
+
+/* si toglie il margine dalla casella sx*/
+#casella_sx_mobile {
+margin-left: 0px;
+}
+/* diminusice il font del paragrafo */
+.body_centrale_mobile p {
+margin-left: 40px;
+margin-right: 40px;
+}
+
+/* non va a capo quando fa vedere l'oggetto adatto alla tua eta' */
+.nome_div_mobile {
+display: inline;
+overflow: hidden;
+white-space: normal;
+}
+
+/* margini delle scritte nel quiz*/
+.testo_mobile {
+margin-left: 20%;
+margin-right: 20%;
+}
+/* bottone per chiudere la nav bar da telefono*/
+.button_close_mobile {
+margin-top: 20px;
+}
+/* header da mobile*/
+.header_mobile_mobile {
+background: #ffffff;
+margin-top: 0%;
+}
+/* bottone per header*/
+.bottone_header_mobile {
+display: none;
+}
+/* classe utilizzata con jquery che praticamente non fa mostrare qualcosa con il display none*/
+.display_nothing_mobile {
+display: none;
+}
+/* il navbrar da mobile*/
+.navbar_mobile_mobile {
+margin-top: 50%;
+}
+/* lista home scopri da mobile */
+.navbar_mobile_mobile li {
+float: none;
+display:block;
+margin-top: 20px;
+}
+/* collegamenti navbar da mobile*/
+.navbar_mobile_mobile a {
+color: #000000;
+font-size: 35px;
+}
+/* menu da mobile*/
+.menu_mobile {
+display: none;
+}
+/* vengono tolti tutti i margini */
+.body_mobile {
+background-color: #ffffff;
+margin: 0;
+}
+/* chiudere la navbar da mobile*/
+.mobile_close_mobile {
+float: none;
+margin-right: 0px;
+color: #000000;
+}
+/* icona di chiusura del navbar, si indica il coore*/
+#close_icon_mobile {
+color: #000000;
+}
+/* icona di apertura da mobile*/
+.mobile_open_mobile {
+float: right;
+margin-right: 20px;
+}
+/* bottone presente solo da mobile*/
+#bottone_mobile_mobile {
+display: block;
+color: #ffffff;
+}
+
+#ingenieria_mobile{
+margin-left: 0;
+}
+
+.grey_div_mobile p {
+margin-left: 40px;
+margin-right: 40px;
+font-size: px;
+}
+.grey_div_mobile h1 {
+font-size: 37px;
+}
+
+.bx-wrapper_mobile {
+margin-top: 30px;
+width: 100%;
+margin-left: 0;
+margin-right: 0;
 }
 
 
-/* Fine CSS della versione per Deksotp*/
-
-
+@media (max-width:1600px) and (min-width:900px) {
+  .bx-wrapper {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 50px;
+  }
+}
 
 /* Css per versione mobile / minore al 4k */
 @media (max-width:1350px) and (min-width:815px){
@@ -277,7 +430,7 @@ footer {
 
 }
 /* versione per telefoni*/
-@media (max-width:815px) and (min-width:0px) {
+@media (max-width:900px) and (min-width:0px) {
 /* si diminuisce il font */
   .caselle h1{
     font-size: 20px;
@@ -371,6 +524,27 @@ margin-right: 20px;
   display: block;
   color: #ffffff;
 }
+
+#ingenieria {
+  margin-left: 0;
+}
+
+.grey_div p {
+  margin-left: 40px;
+  margin-right: 40px;
+  font-size: px;
+}
+.grey_div h1 {
+  font-size: 37px;
+}
+
+.bx-wrapper {
+  margin-top: 30px;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  }
+
 }
 
 /* query che nasconde il tasto che compare solo nella versione per telefoni */
@@ -412,5 +586,6 @@ margin-right: 20px;
 .container_superiore ul {
   margin-right: 0;
 }
+
 
 /* fine CSS */
