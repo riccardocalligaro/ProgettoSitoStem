@@ -181,7 +181,7 @@ text-decoration: none;
   float: left;
   padding: 0px;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 50px;
   width: 20%;
 }
 
@@ -209,7 +209,30 @@ margin-right: 40px;
 color: #8e8282;
 }
 
-
+/*testo scopri*/
+.testo_scopri h1 {
+  margin-top: 45px;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: 'Bree Serif', serif;
+  font-size: 50px;
+  color: #525252;
+}
+ .testo_scopri h2 {
+   margin-left: 10%;
+   margin-right: 10%;
+   font-family: 'Bree Serif', serif;
+   font-size: 25px;
+   color: #8e8282;
+   margin-bottom: 30px;
+  }
+/*immagini scopri */
+  .immagini_scopri {
+   border-bottom: 20px;
+  }
+  .immagini_scopri img {
+    height: 300px;
+  }
 
 /* footer del sito web*/
 footer {
