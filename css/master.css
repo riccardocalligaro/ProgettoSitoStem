@@ -430,6 +430,9 @@ margin-right: 0;
   text-align: center;
 }
 
+.scopri_div {
+  margin-bottom: 30px;
+}
 @media (max-width:1600px) and (min-width:900px) {
   .bx-wrapper {
     width: 50%;
