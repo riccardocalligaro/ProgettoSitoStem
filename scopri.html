@@ -77,9 +77,9 @@ $("#close_icon").hide()
 <!-- navbar presente nella versione mobile < 815 px -->
 
     <div class="navbar_mobile">
-      <li><a href="index.html">home</li></a>
-      <li><a href="#">scopri</li></a>
-      <li><a href="#">galleria</li> </a>
+      <li id="a_premuto_navbar"><a href="index.html">home</li></a>
+      <li id="a_premuto_navbar"><a class="current"  href="scopri.html">scopri</li></a>
+      <li id="a_premuto_navbar"><a href="contatti.html">contatti</li> </a>
     </div>
   </div>
 
@@ -93,61 +93,16 @@ $("#close_icon").hide()
   <div class="testo">
 <div class="nome_div">
 <!-- prima pagina dell quiz iniziale, chiede il nome -->
-  <h2 id="mostra">ciao, </h2>
-  <input id="nome"type="text" name="" value="">
+  <h2 id="materia_testo">cosa ti piace di più? scienza, tecnologia, ingenieria o matematica? </h2>
+  <input id="materia"type="text" name="" value="">
 
 <!-- seconda pagina del quiz iniziale, chiede quanti anni -->
 
-  <h2 id="anni_testo">Quanti anni hai </h2>
-  <script type="text/javascript">
-       $("#anni_testo").hide();
-   </script>
+
 
 <!-- textbox di input deglia anni -->
-  <input id="anni" type="text" name="" value="">
-  <script type="text/javascript">
-       $("#anni").hide();
-   </script>
 
 
-<!-- immagini dei vari giochi alle diverse fasce d'eta', sono nascosti tutti senza essere nemmeno caricati -->
-
-<!-- anni 2 -->
-   <img id="clementino_2" src="./images/clementino_2.jpg" alt="" class="img_header">
-   <script type="text/javascript">
-        $("#clementino_2").hide();
-    </script>
-
-<!-- anni 3 -->
-
-<!-- anni 4 -->
-
-<!--anni 5 -->
-
-<!--anni 6 -->
-
-<!-- anni 7 -->
-
-<!-- anni 8 -->
-
-<!-- anni 9 -->
-
-<!-- anni 10 -->
-<img id="10anni" src="./images/10anni.png" alt="" class="img_header">
-<script type="text/javascript">
-     $("#10anni").hide();
- </script>
-<!-- anni 11 -->
-
-<!-- anni 12 -->
-
-<!-- anni 13 -->
-
-<!-- anni 14 -->
-  <a href="https://www.arduino.cc/"><img id="14anni" src="./images/14anni.png" alt="" class="img_header"></a>
-    <script type="text/javascript">
-         $("#14anni").hide();
-     </script>
 <!-- anni 20 ++ -->
 
 </div>
@@ -155,13 +110,8 @@ $("#close_icon").hide()
   </div>
 
 <!-- bottone invia nome nell'header -->
-<button class="bottone_header" id="invia_nome"type="button" name="button">Invia</button>
+<button class="bottone_header" id="invia_materia"type="button" name="button">Invia</button>
 <!-- bottone invia anni nell'header -->
-<button class="bottone_header" id="invia_anni"type="button" name="button">Invia anni</button>
-<!-- nasconde il bottone invia anni nell'header -->
-<script type="text/javascript">
-     $("#invia_anni").hide();
- </script>
 </header>
 
 

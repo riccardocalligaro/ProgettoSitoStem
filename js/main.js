@@ -1,9 +1,4 @@
-/**
- * jQuery.browser.mobile (http://detectmobilebrowser.com/)
- *
- * jQuery.browser.mobile will be true if the browser is a mobile device
- *
- **/
+
  var isMobile = {
      Android: function() {
          return navigator.userAgent.match(/Android/i);
@@ -28,6 +23,61 @@ if (isMobile.any()) {
 
 }
 
+  $("#invia_materia").click(function() {
+    var materia = $("#materia").val().toLowerCase()
+
+    if (materia == "matematica") {
+      var battue_matematica = new Array("Chi non conosce la matematica difficilmente riesce a cogliere la bellezza, la più intima bellezza, della natura.",
+                                        "Sono persuaso che la matematica sia il più importante strumento di conoscenza fra quelli lasciatici in eredità dall’agire umano, essendo la fonte di tutte le cose.",
+                                        "Come si dice bellezza poetica si dovrebbe dire altresì dire bellezza matematica. -Blaise Pascal" )
+        battuta_scelta_matematica = battue_matematica[Math.floor( Math.random() * battue_matematica.length )];
+
+      $('#materia_testo').text(battuta_scelta_matematica);
+
+
+
+    }
+
+    if (materia == "ingenieria") {
+      var ingenieria_batutte = new Array("La scienza è sapere; l’ingegneria è fare.",
+                                        "Saranno anche i guerrieri a conquistare la gloria, ma sono gli ingegneri che costruiscono la società.",
+                                        "Una volta sono riuscito a comprendere cosa diceva un ingegnere, ma poi per una settimana non capivo più cosa diceva la gente normale.",
+                                        "Lo scienziato descrive ciò che esiste; l’ingegnere crea ciò che non era mai stato.",
+
+                                       )
+        battuta_scelta_ingenieria = ingenieria_batutte[Math.floor( Math.random() * ingenieria_batutte.length )];
+      $('#materia_testo').text(battuta_scelta_ingenieria);
+    }
+
+
+    if (materia == "scienza") {
+      var scienza_batutte = new Array("La scienza non è che la spiegazione di un miracolo che non riusciamo mai a spiegare e l’arte è un’interpretazione di quel miracolo..",
+                                        "La Natura compone alcune delle sue poesie più belle davanti al microscopio e al telescopio.",
+                                        "La più bella e profonda emozione che possiamo provare è il senso del mistero; sta qui il seme di ogni arte, di ogni vera scienza.",
+                                        "Niente nella vita va temuto, dev’essere solamente compreso. Ora è tempo di comprendere di più, così possiamo temere di meno.",
+
+                                       )
+        battuta_scelta_scienza = scienza_batutte[Math.floor( Math.random() * scienza_batutte.length )];
+      $('#materia_testo').text(battuta_scelta_scienza);
+    }
+
+    if (materia == "tecnologia") {
+      var tecnologia_batutte = new Array("I computer sono incredibilmente veloci, accurati e stupidi. Gli uomini sono incredibilmente lenti, inaccurati e intelligenti. L'insieme dei due costituisce una forza incalcolabile. ",
+                                        "Il computer è la bicicletta della nostra mente. -Steve Jobs.",
+                                        "640 Kb dovrebbero essere abbastanza per chiunque. -Bill Gates",
+                                        "I bravi programmatori sanno cosa scrivere. I migliori sanno cosa riscrivere.",
+
+                                       )
+        battuta_scelta_tecnologia = tecnologia_batutte[Math.floor( Math.random() * tecnologia_batutte.length )];
+      $('#materia_testo').text(battuta_scelta_tecnologia);
+    }
+
+  if (materia != "matematica" && materia != "ingenieria" && materia != "scienza" && materia != "tecnologia") {
+    $('#materia_testo').text("Mmmm... non esiste questa materia!😕 ");
+
+  }
+
+  });
   $('#invia_nome').click(function(){
     // salva nella variabile nome il nome
     var nome = $("#nome").val();
@@ -41,7 +91,8 @@ if (isMobile.any()) {
 
       // se il nome viene inserito allora si scrive sulla textbot mostra aggiungendo un punto esclamativo e faccina
       else {
-        $('#mostra').append(nome);
+        $('#mostra').text("ciao, ");
+        $('#mostra').append(nome)
         $('#mostra').append("! 😊");
         $("#invia_nome").off()
       }
@@ -76,9 +127,14 @@ function()
 //inizo dello js che chiede gli anni
 
   $("#invia_anni").click(function() {
+
+
+
         //salva nella variabile anni il testo inserito
         var anni = $("#anni").val();
 
+
+  if(anni.match(/^\d+$/)) {
         //se il testo non contiene niente
          if (anni == "") {
            // fa una battuta
@@ -116,7 +172,7 @@ function()
 
             }
 
-          
+
 
             if (anni>=4 && anni<=8) {
                //se anni == 14
@@ -133,14 +189,14 @@ function()
             function()
             {
               $("#anni_testo").text("Scopri Lego! Clicca sull'immagine per maggiori informazioni.")
-              $("#lego").css("width", "400px")
+              $("#lego").css("width", "150px")
                $("#lego").css("margin-top", "20px")
               $("#lego").fadeIn(1000);
             }, 500);
 
             }
 
-           
+
 
             if (anni>=9 && anni<=13) {
               $("#invia_anni").fadeOut(500)
@@ -211,6 +267,15 @@ function()
              $("#invia_anni").removeClass('animated shake');
               });
             }
+
+            if (anni>=150) {
+              $("#anni_testo").text("😂 Credo tu abbia sbagliato!")
+              $("#invia_anni").addClass('animated shake');
+              $("#invia_anni").addClass('button_border');
+              $('#invia_anni').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+             $("#invia_anni").removeClass('animated shake');
+              });
+            }
 //se non sono presenti giochi adatti
             if (anni >= 60 && anni<100) {
               $("#anni_testo").text("Non abbiamo giochi adatti per te! 😞")
@@ -219,8 +284,14 @@ function()
               $('#invia_anni').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
              $("#invia_anni").removeClass('animated shake');
               });
+
             }
           }
+      }
+
+      else {
+             $('#anni_testo').text("Puoi usare solo caratteri numerici per indicare un'età! 😉");
+      }
   });
 
 //fine del quiz
@@ -232,14 +303,20 @@ function()
 
 // animazioni della nav bar
 
+$("#a_premuto_navbar").click(function(){
 
+ $(".navbar_mobile").hide()
+$("#bottone_mobile").addClass('animated bounceInUp')
+
+});
 //apertura navbar
 $('#nav_bar_mobile_button').click(function(){
-
+$("#invia_materia").addClass("display_nothing")
+$("#materia_testo").addClass("display_nothing")
+$("#materia").addClass("display_nothing")
  $("#bottone_mobile").hide()
  $("#bottone_mobile").removeClass("mobile_open")
  $("#bottone_mobile").addClass("mobile_close")
-
  $(".navbar_mobile").show()
  $(".navbar_mobile").addClass('animated bounceInUp')
  $(".body_centrale").addClass("display_nothing")
@@ -255,6 +332,8 @@ $('#nav_bar_mobile_button').click(function(){
  $(".grey_div").addClass("display_nothing")
  $(".slider").addClass("display_nothing")
  $(".bx-wrapper").addClass("display_nothing")
+ $("#clementoni").addClass("display_nothing")
+$(".youtube_player").addClass("display_nothing")
 
 
 
@@ -263,8 +342,14 @@ $('#nav_bar_mobile_button').click(function(){
 
 //animazione di quando si preme il bottone per chiudere la navbar da mobile
 $("#close_icon").click(function() {
+  $("#invia_materia").removeClass("display_nothing")
+  $("#materia_testo").removeClass("display_nothing")
+  $("#materia").removeClass("animated bounceInUp")
+  $("#invia_materia").addClass("animated bounceInUp")
+  $("#materia_testo").addClass("animated bounceInUp")
 $(".testo").removeClass("display_nothing")
 $("#invia_anni").removeClass("display_nothing")
+  $(".youtube_player").removeClass("display_nothing")
 $(".body_centrale").removeClass("display_nothing")
 $(".body_centrale").addClass('animated bounceInUp')
 $("#bottone_mobile").show()
@@ -285,6 +370,7 @@ $("#nome").addClass('animated bounceInUp')
 $("header").removeClass("header_mobile")
 $(".slider").removeClass("display_nothing")
 $(".bx-wrapper").removeClass("display_nothing")
+$("#clementoni").removeClass("display_nothing")
 
 $("header").addClass('animated bounceInUp')
 $(".testo").addClass("animated bounceInUp")

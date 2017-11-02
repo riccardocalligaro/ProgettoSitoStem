@@ -16,15 +16,14 @@ progetto informatica 2017/2018 -->
     <link rel="stylesheet" href="./css/master.css">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
     <!-- font da google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/slick.css"/>
 <link rel="stylesheet" type="text/css" href="./css/slick-theme.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="./js/slick.min.js"></script>
     <link rel="stylesheet" href="./css/master.css">
     <link rel="stylesheet" href="./css/animate.css">
@@ -33,10 +32,10 @@ progetto informatica 2017/2018 -->
     <title>Stem | Home</title>
 
 
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
+      <link rel="stylesheet" href="./css/jquery.bxslider.css">
+
+      <script src="./js/jquery.bxslider.min.js"></script>
       <script>
         $(document).ready(function(){
           $('.slider').bxSlider();
@@ -58,7 +57,7 @@ progetto informatica 2017/2018 -->
       <ul>
         <li><a href="index.html">home</li></a>
         <li><a href="scopri.html">scopri</li></a>
-        <li><a href="#">galleria</li> </a>
+        <li><a href="contatti.html">contatti</li> </a>
       </ul>
     </nav>
 <!-- bottone per aprire la navigation bar da mobile < 815 px -->
@@ -78,9 +77,9 @@ $("#close_icon").hide()
 <!-- navbar presente nella versione mobile < 815 px -->
 
     <div class="navbar_mobile">
-      <li><a href="index.html">home</li></a>
-      <li><a href="#">scopri</li></a>
-      <li><a href="#">galleria</li> </a>
+      <liid="a_premuto_navbar"><a class="current" href="index.html">home</li></a>
+      <li id="a_premuto_navbar"><a href="scopri.html">scopri</li></a>
+      <li id="a_premuto_navbar"><a href="contatti.html">contatti</li> </a>
 
     </div>
   </div>
@@ -95,7 +94,7 @@ $("#close_icon").hide()
   <div class="testo">
 <div class="nome_div">
 <!-- prima pagina dell quiz iniziale, chiede il nome -->
-  <h2 id="mostra">ciao, </h2>
+  <h2 id="mostra">ciao, come ti chiami? </h2>
   <input id="nome"type="text" name="" value="">
 
 <!-- seconda pagina del quiz iniziale, chiede quanti anni -->
@@ -118,12 +117,19 @@ $("#close_icon").hide()
   <a href="https://www.amazon.it/s/ref=s9_acss_bw_cg_STEM_3a1_w?__mk_it_IT=%C5M%C5Z%D5%D1&rh=i%3Atoys%2Cn%3A523997031%2Cn%3A%21600761031%2Cn%3A%21600762031%2Cn%3A13494296031%2Cp_n_age_range%3A633755031&bbn=13494296031&ie=UTF8&pf_rd_m=A2VX19DFO3KCLO&pf_rd_s=merchandised-search-3&pf_rd_r=ZHA28QZYCKBMGNPFG2K4&pf_rd_t=101&pf_rd_p=a4385a5c-e8d9-49a7-9014-974cf1a7dfe7&pf_rd_i=13494296031"><img id="clementoni" src="./images/clementoni.png" alt="" class="img_header"></a>
    <script type="text/javascript">
         $("#clementoni").hide();
+
     </script>
 
 <a href="https://www.amazon.it/s/ref=nb_sb_noss?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&url=search-alias%3Dtoys&field-keywords=lego+&rh=n%3A523997031%2Ck%3Alego+"><img id="lego" src="./images/lego.png" alt="" class="img_header"></a>
 <script type="text/javascript">
      $("#lego").hide();
  </script>
+
+
+ <a href="https://www.amazon.it/s/ref=nb_sb_noss?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&url=search-alias%3Dtoys&field-keywords=lego+&rh=n%3A523997031%2Ck%3Alego+"><img id="lego_mobile" src="./images/lego_mobile.png" alt="" class="img_header"></a>
+ <script type="text/javascript">
+      $("#lego_mobile").hide();
+  </script>
 <!-- anni 10 -->
 <a href="https://www.amazon.it/s/ref=nb_sb_ss_i_1_12?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&url=search-alias%3Dtoys&field-keywords=lego+mindstorms&sprefix=lego+mindsto%2Ctoys%2C164&crid=3JCJSYUNN0FQS&rh=n%3A523997031%2Ck%3Alego+mindstorms"><img id="10anni" src="./images/10anni.png" alt="" class="img_header"></a>
 <script type="text/javascript">
@@ -200,7 +206,7 @@ $("#close_icon").hide()
 <!-- slideshow delle immagini -->
 </div>
 
-<div class="grey_div">
+<div class="grey_div" id="div_scopri_2">
 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur faucibus finibus sapien, eget rutrum quam bibendum a. Ut tincidunt metus non urna tincidunt, a sollicitudin orci ultrices. Nam tristique pharetra ornare. Sed posuere ac urna et tincidunt. Sed consequat cursus tempus. Donec vehicula leo nec ante maximus consectetur. Nam eu orci metus. Suspendisse imperdiet velit ac orci iaculis venenatis.
 

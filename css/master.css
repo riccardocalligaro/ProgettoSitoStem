@@ -428,6 +428,101 @@ margin-right: 0;
 .scopri_div {
   margin-bottom: 30px;
 }
+
+#scopri {
+margin-bottom: 20px;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+footer a{
+  color: #ffffff;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+#materia_testo {
+  margin-left: 5%;
+  margin-right: 5%;
+  white-space: normal;
+}
+
+.body_contatti {
+  text-align: center;
+}
+
+.body_contatti h1 {
+  margin-top: 20px;
+  color: #525252;
+  font-size: 20px;
+  font-family: 'Bree Serif', serif;
+}
+
+.body_contatti input {
+
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 10px 20px;
+    border: 1px solid #b7b7b7;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    font: normal 16px/normal Arial, Helvetica, sans-serif;
+    color: rgba(0,142,198,1);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    text-shadow: 1px 1px 0 rgba(255,255,255,0.66) ;
+    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    width: 300px;
+}
+
+
+.body_contatti textarea {
+  margin-top: 15px;
+  height: 200px;
+  width: 300px;
+      display: inline-block;
+      -webkit-box-sizing: content-box;
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+      padding: 10px 20px;
+      border: 1px solid #b7b7b7;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      font: normal 16px/normal Arial, Helvetica, sans-serif;
+      color: rgba(0,142,198,1);
+      -o-text-overflow: clip;
+      text-overflow: clip;
+      text-shadow: 1px 1px 0 rgba(255,255,255,0.66) ;
+      -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+      -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+      -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+      transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+
+.body_contatti button {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  background-color: #79bf69; /* Green */
+  color: #ffffff;
+  border: none;
+  padding: 13px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 1px;
+}
 @media (max-width:1600px) and (min-width:900px) {
   .bx-wrapper {
     width: 50%;
@@ -452,12 +547,15 @@ margin-right: 0;
 #ingenieria {
   margin-left: 10%;
 }
-
+.testo_mobile_materia {
+  margin-top: 80px;
+}
 
 }
 /* versione per telefoni*/
 @media (max-width:900px) and (min-width:0px) {
 /* si diminuisce il font */
+
   .caselle h1{
     font-size: 20px;
 }
@@ -566,9 +664,58 @@ margin-right: 20px;
 
 .bx-wrapper {
   margin-top: 30px;
-  width: 100%;
-  margin-left: 0;
-  margin-right: 0;
+
+width: 90%;
+margin-left: 5%;
+  }
+
+  #scopri {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  footer {
+    font-weight: lighter;
+  }
+  footer h1 {
+    font-size: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  h2 {
+    font-weight: normal;
+  }
+  footer h3 {
+    display: none;
+  }
+
+  footer h2 {
+    font-size: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  footer a:hover {
+    color: #ffffff;
+    font-style: italic;
+  }
+
+  footer a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .bx-wrapper {
+    -moz-box-shadow: 0 0 0px #ccc;
+-webkit-box-shadow: 0 0 0px #ccc;
+box-shadow: 0 0 0px #ccc;
+  }
+
+  .navbar_mobile a:hover {
+    color: #000000;
+    font-style: italic;
+  }
+
+   a.current {
+        color: #90c652;
   }
 
 }
