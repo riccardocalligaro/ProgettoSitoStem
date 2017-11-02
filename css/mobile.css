@@ -1,0 +1,114 @@
+caselle h1{
+  font-size: 20px;
+}
+
+/* ora nei telefoni ogni casella es ingenieria occupa tutta una riga */
+.caselle .casella {
+  width: 100%;
+}
+
+/* si toglie il margine dalla casella sx*/
+#casella_sx {
+margin-left: 0px;
+}
+/* diminusice il font del paragrafo */
+.body_centrale p {
+margin-left: 40px;
+margin-right: 40px;
+}
+
+/* non va a capo quando fa vedere l'oggetto adatto alla tua eta' */
+.nome_div {
+display: inline;
+overflow: hidden;
+white-space: normal;
+}
+
+/* margini delle scritte nel quiz*/
+.testo {
+margin-left: 20%;
+margin-right: 20%;
+}
+/* bottone per chiudere la nav bar da telefono*/
+.button_close {
+margin-top: 20px;
+}
+/* header da mobile*/
+.header_mobile {
+background: #ffffff;
+margin-top: 0%;
+}
+/* bottone per header*/
+.bottone_header_mobile {
+display: none;
+}
+/* classe utilizzata con jquery che praticamente non fa mostrare qualcosa con il display none*/
+.display_nothing {
+display: none;
+}
+/* il navbrar da mobile*/
+.navbar_mobile {
+margin-top: 50%;
+}
+/* lista home scopri da mobile */
+.navbar_mobile li {
+float: none;
+display:block;
+margin-top: 20px;
+}
+/* collegamenti navbar da mobile*/
+.navbar_mobile a {
+color: #000000;
+font-size: 35px;
+}
+/* menu da mobile*/
+.menu {
+display: none;
+}
+/* vengono tolti tutti i margini */
+body {
+background-color: #ffffff;
+margin: 0;
+}
+/* chiudere la navbar da mobile*/
+.mobile_close {
+float: none;
+margin-right: 0px;
+color: #000000;
+}
+/* icona di chiusura del navbar, si indica il coore*/
+#close_icon {
+color: #000000;
+}
+/* icona di apertura da mobile*/
+.mobile_open {
+float: right;
+margin-right: 20px;
+}
+/* bottone presente solo da mobile*/
+#bottone_mobile {
+display: block;
+color: #ffffff;
+}
+
+#ingenieria {
+margin-left: 0;
+}
+
+.grey_div p {
+margin-left: 40px;
+margin-right: 40px;
+font-size: px;
+}
+.grey_div h1 {
+font-size: 37px;
+}
+
+.bx-wrapper {
+margin-top: 30px;
+width: 100%;
+margin-left: 0;
+margin-right: 0;
+}
+
+}

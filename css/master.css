@@ -424,11 +424,6 @@ margin-left: 0;
 margin-right: 0;
 }
 
-.youtube_player {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  text-align: center;
-}
 
 @media (max-width:1600px) and (min-width:900px) {
   .bx-wrapper {
