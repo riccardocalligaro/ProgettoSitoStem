@@ -1,31 +1,25 @@
-/* reset / standardizziamo i vari elementi fondamentali */
-
+/* reset di alcuni stili */
+h2 {
+  font-weight: normal;
+}
 /* definiamo il body */
-
 body {
   line-height:1.5;
   margin: 0;
 }
-
 /* Parte superiore del sito web, header contente la lista home scopri cotnatti e il quiz*/
 .container {
-
   width: 80%;
   margin: auto;
   overflow: hidden;
-
 }
-
 /* lista  per versione web */
 .container_superiore ul {
-
    margin:0px;
    padding: 0px;
    margin-right: 200px;
 }
-
 /* sfondo sfumato nei vari tipi di verde */
-
 header {
   background: #85c35d; /* Per broswer che non supportano le gradazioni */
   background: -webkit-linear-gradient(#85c35d, #6bbb78 ,#50b194); /* Safari 5.1 to 6.0 */
@@ -38,43 +32,36 @@ header {
   text-align: center;
   margin: 0;
 }
-
 /* collegamenti nell'header */
 header a {
       font-family: 'Roboto', sans-serif;
       color:#ffffff;
       text-decoration: none;
       font-size: 22px;
-
 }
-
 /* stile dei singoli elementi dell'header */
 header li {
   float: left;
   display: inline;
   padding: 0 20px 0 20px;
 }
-
 /* definiamo la nav bar dell'header*/
 header nav {
   float: right;
   margin-top: 10px;
 }
-
 /* cosa compiere quando si passa con il mouse sopra gli elementi home scopri dell'header */
 header a:hover{
 font-style: italic;
 color: #ffffff;
 text-decoration: none;
 }
-
 /* definizione della parte del quiz dell'heade r*/
 .testo {
   text-align: center;
   margin-top: 120px;
   font-family: 'Roboto', sans-serif;
 }
-
 /* testo h2 del quiz (ciao, quanti anni hai) */
 .testo h2 {
   font-size: 20px;
@@ -92,7 +79,6 @@ text-decoration: none;
   border-radius: 40px;
   color: #000000;
 }
-
 /* stile del quiz dove chiede il nome */
 .nome_div {
   display: inline;
@@ -112,21 +98,12 @@ text-decoration: none;
   font-size: 16px;
   border-radius: 4px;
 }
-
 /* stile delle immagini che variano in  base agli anni */
 .img_header {
   height: 150px;
   width: 200px;
 }
-
-
-
-
 /* Fine parte superiore del sito web, inizo del body centrale */
-
-
-
-
 /* Inizio parte centrale del sito web */
 
 /* stile del corpo centrale*/
@@ -136,7 +113,6 @@ text-decoration: none;
   height: auto;
   text-align: center;
 }
-
 /* testo in grande Scopri Stem */
 .body_centrale h1 {
   margin: 0;
@@ -144,7 +120,6 @@ text-decoration: none;
   font-size: 53px;
   font-family: 'Bree Serif', serif;
 }
-
 /* testo scopri in piccolo sopra h1*/
 .body_centrale h3 {
   font-family: 'Fjalla One', sans-serif;
@@ -154,7 +129,6 @@ text-decoration: none;
   margin: 0;
   padding-top: 20px;
 }
-
 /* paragrafo del copro centrale che spiega cos'e' stem*/
 .body_centrale p {
   margin-left: 200px;
@@ -167,10 +141,8 @@ text-decoration: none;
 .button_border {
   border: 1px solid #e74c3c; /*rosso che contorna il bottone*/
 }
-
 /* stile delle caselle contenenti le varie materie di stem */
 .caselle {
-
   margin: auto;
   overflow: hidden;
   margin-top: 20px;
@@ -184,7 +156,6 @@ text-decoration: none;
   padding-top: 50px;
   width: 20%;
 }
-
 /* la casella a sx ha un margine maggiore rispetto alle altre per motivi di progettazione*/
 #casella_sx {
   margin-left: 10%;
@@ -208,7 +179,6 @@ margin-left: 40px;
 margin-right: 40px;
 color: #8e8282;
 }
-
 /*testo scopri*/
 .testo_scopri h1 {
   margin-top: 45px;
@@ -233,7 +203,6 @@ color: #8e8282;
   .immagini_scopri img {
     height: 300px;
   }
-
 /* footer del sito web*/
 footer {
   background: #85c35d; /* Per broswer che non supportano le gradazioni */
@@ -248,22 +217,30 @@ footer {
   text-align: center;
   font-family: 'Bree Serif', serif;
 }
-
+/* realizzato da ... */
 footer h1 {
   font-size: 25px;
 }
-
+/* classe 2e   */
 footer h3 {
   font-size: 20px;
 }
-
+/* autorizzazioni*/
 footer h2 {
   font-size: 16px;
 }
-
+/* link alle autorizzazioni */
 footer h2 a {
   text-decoration: none;
+    color: #ffffff;
 }
+/* quando si mette il mouse su autorizzazioni */
+footer a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* div verde cotnente del testo, sfondo sfumato come sull header */
 .grey_div {
   background: #85c35d; /* Per broswer che non supportano le gradazioni */
   background: -webkit-linear-gradient(#85c35d, #6bbb78 ,#50b194); /* Safari 5.1 to 6.0 */
@@ -276,18 +253,13 @@ footer h2 a {
   padding-bottom: 30px;
   text-align: center;
 }
-
+/* testo del div verde */
 .grey_div h1 {
   margin-top: 0;
   color: #ffffff;
   font-size: 53px;
   font-family: 'Bree Serif', serif;
 }
-/* Fine CSS della versione per Deksotp*/
-
-/* testo scopri in piccolo sopra h1*/
-
-
 /* paragrafo del copro centrale che spiega cos'e' stem*/
 .grey_div p {
   margin-top: 20px;
@@ -296,220 +268,84 @@ margin-right: 200px;
 font-family: 'Bree Serif', serif;
 font-size: 20px;
 color: #ffffff;
-
 }
-
+/* stile dello slider */
 .bx-wrapper {
   width: 50%;
   margin-left: 25%;
   margin-top: 100px;
 }
-
-.header_mobile_android {
-  background-color: red;
-}
-
-/* versione Android */
-
-.caselle_mobile h1{
-  font-size: 20px;
-}
-
-/* ora nei telefoni ogni casella es ingenieria occupa tutta una riga */
-.caselle_mobile .casella {
-  width: 100%;
-}
-
-/* si toglie il margine dalla casella sx*/
-#casella_sx_mobile {
-margin-left: 0px;
-}
-/* diminusice il font del paragrafo */
-.body_centrale_mobile p {
-margin-left: 40px;
-margin-right: 40px;
-}
-
-/* non va a capo quando fa vedere l'oggetto adatto alla tua eta' */
-.nome_div_mobile {
-display: inline;
-overflow: hidden;
-white-space: normal;
-}
-
-/* margini delle scritte nel quiz*/
-.testo_mobile {
-margin-left: 20%;
-margin-right: 20%;
-}
-/* bottone per chiudere la nav bar da telefono*/
-.button_close_mobile {
-margin-top: 20px;
-}
-/* header da mobile*/
-.header_mobile_mobile {
-background: #ffffff;
-margin-top: 0%;
-}
-/* bottone per header*/
-.bottone_header_mobile {
-display: none;
-}
-/* classe utilizzata con jquery che praticamente non fa mostrare qualcosa con il display none*/
-.display_nothing_mobile {
-display: none;
-}
-/* il navbrar da mobile*/
-.navbar_mobile_mobile {
-margin-top: 50%;
-}
-/* lista home scopri da mobile */
-.navbar_mobile_mobile li {
-float: none;
-display:block;
-margin-top: 20px;
-}
-/* collegamenti navbar da mobile*/
-.navbar_mobile_mobile a {
-color: #000000;
-font-size: 35px;
-}
-/* menu da mobile*/
-.menu_mobile {
-display: none;
-}
-/* vengono tolti tutti i margini */
-.body_mobile {
-background-color: #ffffff;
-margin: 0;
-}
-/* chiudere la navbar da mobile*/
-.mobile_close_mobile {
-float: none;
-margin-right: 0px;
-color: #000000;
-}
-/* icona di chiusura del navbar, si indica il coore*/
-#close_icon_mobile {
-color: #000000;
-}
-/* icona di apertura da mobile*/
-.mobile_open_mobile {
-float: right;
-margin-right: 20px;
-}
-/* bottone presente solo da mobile*/
-#bottone_mobile_mobile {
-display: block;
-color: #ffffff;
-}
-
-#ingenieria_mobile{
-margin-left: 0;
-}
-
-.grey_div_mobile p {
-margin-left: 40px;
-margin-right: 40px;
-font-size: px;
-}
-.grey_div_mobile h1 {
-font-size: 37px;
-}
-
-.bx-wrapper_mobile {
-margin-top: 30px;
-width: 100%;
-margin-left: 0;
-margin-right: 0;
-}
-
-
+/*  PAGINA SCOPRI*/
 .scopri_div {
   margin-bottom: 30px;
 }
-
+/* testo scopri in grande  */
 #scopri {
 margin-bottom: 20px;
 }
-
-h2 {
-  font-weight: normal;
-}
-
-footer a{
-  color: #ffffff;
-}
-
-footer a:hover {
-  text-decoration: underline;
-  font-weight: bold;
-}
-
+/* quiz della materia rpeferita */
 #materia_testo {
   margin-left: 5%;
   margin-right: 5%;
   white-space: normal;
 }
-
+/* PAGINA CONTATTI */
 .body_contatti {
   text-align: center;
 }
-
+/* testo sviluppatori o scuola pagina contatti */
 .body_contatti h1 {
   margin-top: 20px;
   color: #525252;
   font-size: 20px;
   font-family: 'Bree Serif', serif;
 }
-
+/* input della pagina cotnatti */
 .body_contatti input {
-
-    display: inline-block;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    padding: 10px 20px;
-    border: 1px solid #b7b7b7;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    font: normal 16px/normal Arial, Helvetica, sans-serif;
-    color: rgba(0,142,198,1);
-    -o-text-overflow: clip;
-    text-overflow: clip;
-    text-shadow: 1px 1px 0 rgba(255,255,255,0.66) ;
-    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-    width: 300px;
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  padding: 10px 20px;
+  border: 1px solid #b7b7b7;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font: normal 16px/normal Arial, Helvetica, sans-serif;
+  color: rgba(0,142,198,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.66) ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  width: 300px;
 }
 
-
+/*  sempre input */
 .body_contatti textarea {
   margin-top: 15px;
   height: 200px;
   width: 300px;
-      display: inline-block;
-      -webkit-box-sizing: content-box;
-      -moz-box-sizing: content-box;
-      box-sizing: content-box;
-      padding: 10px 20px;
-      border: 1px solid #b7b7b7;
-      -webkit-border-radius: 3px;
-      border-radius: 3px;
-      font: normal 16px/normal Arial, Helvetica, sans-serif;
-      color: rgba(0,142,198,1);
-      -o-text-overflow: clip;
-      text-overflow: clip;
-      text-shadow: 1px 1px 0 rgba(255,255,255,0.66) ;
-      -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-      -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-      -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-      transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  padding: 10px 20px;
+  border: 1px solid #b7b7b7;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font: normal 16px/normal Arial, Helvetica, sans-serif;
+  color: rgba(0,142,198,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.66) ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
 }
-
-
+/* bottone pagian cotnatti*/
 .body_contatti button {
   margin-top: 15px;
   margin-bottom: 20px;
@@ -523,6 +359,73 @@ footer a:hover {
   font-size: 16px;
   border-radius: 1px;
 }
+/* spiegazione */
+.spiegazione_div p {
+   margin-top: 20px;
+ font-family: 'Bree Serif', serif;
+ font-size: 20px;
+ color: #8e8282;
+ margin-left: 100px;
+ margin-right: 100px;
+}
+.spiegazione_div {
+  text-align: center;
+}
+#errore_autorizzazioni {
+  margin-top: 190px;
+  font-size: 30px;
+}
+.autorizzazioni_div {
+  text-align: center;
+}
+.autorizzazioni_div p {
+  margin-top: 20px;
+font-family: 'Bree Serif', serif;
+font-size: 20px;
+color: #8e8282;
+margin-left: 100px;
+margin-right: 100px;
+}
+/* clase che illumina la scritta nell header della pagina  */
+.current_desktop{
+  text-shadow: 1px 1px 1px black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* VERSIONE MOBILE */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width:1600px) and (min-width:900px) {
   .bx-wrapper {
     width: 50%;
@@ -555,7 +458,11 @@ footer a:hover {
 /* versione per telefoni*/
 @media (max-width:900px) and (min-width:0px) {
 /* si diminuisce il font */
+.spiegazione_div p {
 
+ margin-left: 30px;
+ margin-right: 30px;
+}
   .caselle h1{
     font-size: 20px;
 }

@@ -1,4 +1,4 @@
-
+// Vede se si tratta di un dispositivo mobile
  var isMobile = {
      Android: function() {
          return navigator.userAgent.match(/Android/i);
@@ -19,10 +19,7 @@
          return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
      }
  };
-if (isMobile.any()) {
-
-}
-
+// quiz della materia
   $("#invia_materia").click(function() {
     var materia = $("#materia").val().toLowerCase()
 
@@ -78,6 +75,9 @@ if (isMobile.any()) {
   }
 
   });
+
+
+  // quiz iniviale del nome
   $('#invia_nome').click(function(){
     // salva nella variabile nome il nome
     var nome = $("#nome").val();
@@ -294,10 +294,13 @@ function()
       }
   });
 
-//fine del quiz
 
+  $("#invia_contatti").click(function() {
+    var problema = $("#contatti_messaggio").val()
 
+      $("#contatti_testo").text("Non abbiamo ancora registarto questo problema! Contattaci 😃 ")
 
+});
 // INIZIO NAVBAR
 
 
@@ -311,9 +314,14 @@ $("#bottone_mobile").addClass('animated bounceInUp')
 });
 //apertura navbar
 $('#nav_bar_mobile_button').click(function(){
-$("#invia_materia").addClass("display_nothing")
-$("#materia_testo").addClass("display_nothing")
-$("#materia").addClass("display_nothing")
+   $(".spiegazione_div").addClass("display_nothing")
+ $("#contatti_testo").addClass("display_nothing")
+ $("#contatti_messaggio").addClass("display_nothing")
+ $("#invia_contatti").addClass("display_nothing")
+ $(".body_contatti").addClass("display_nothing")
+ $("#invia_materia").addClass("display_nothing")
+ $("#materia_testo").addClass("display_nothing")
+ $("#materia").addClass("display_nothing")
  $("#bottone_mobile").hide()
  $("#bottone_mobile").removeClass("mobile_open")
  $("#bottone_mobile").addClass("mobile_close")
@@ -342,6 +350,16 @@ $(".youtube_player").addClass("display_nothing")
 
 //animazione di quando si preme il bottone per chiudere la navbar da mobile
 $("#close_icon").click(function() {
+     $(".spiegazione_div").removeClass("display_nothing")
+        $(".spiegazione_div").addClass("animated bounceInUp")
+  $("#contatti_testo").removeClass("display_nothing")
+  $("#contatti_messaggio").removeClass("display_nothing")
+  $("#invia_contatti").removeClass("display_nothing")
+  $(".body_contatti").removeClass("display_nothing")
+  $("#contatti_testo").addClass("animated bounceInUp")
+  $("#contatti_messaggio").addClass("animated bounceInUp")
+  $("#invia_contatti").addClass("animated bounceInUp")
+  $(".body_contatti").addClass("animated bounceInUp")
   $("#invia_materia").removeClass("display_nothing")
   $("#materia_testo").removeClass("display_nothing")
   $("#materia").removeClass("animated bounceInUp")

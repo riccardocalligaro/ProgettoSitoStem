@@ -30,7 +30,7 @@ progetto informatica 2017/2018 -->
     <link rel="stylesheet" href="./css/animate.css">
     <meta charset="utf-8">
     <title>Stem | Home</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -56,8 +56,8 @@ progetto informatica 2017/2018 -->
     <nav class="menu">
       <ul>
         <li><a href="index.html">home</li></a>
-        <li><a href="#">scopri</li></a>
-        <li><a href="#">galleria</li> </a>
+        <li><a href="scopri.html" class="current_desktop">scopri</li></a>
+        <li><a href="contatti.html">contatti</li> </a>
       </ul>
     </nav>
 <!-- bottone per aprire la navigation bar da mobile < 815 px -->
@@ -95,16 +95,6 @@ $("#close_icon").hide()
 <!-- prima pagina dell quiz iniziale, chiede il nome -->
   <h2 id="materia_testo">cosa ti piace di più? scienza, tecnologia, ingenieria o matematica? </h2>
   <input id="materia"type="text" name="" value="">
-
-<!-- seconda pagina del quiz iniziale, chiede quanti anni -->
-
-
-
-<!-- textbox di input deglia anni -->
-
-
-<!-- anni 20 ++ -->
-
 </div>
 
   </div>
@@ -125,47 +115,9 @@ $("#close_icon").hide()
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at felis mauris. Nam lacinia nulla lorem, vel molestie arcu gravida ut. Sed sed venenatis lorem, sit amet pharetra ligula. Ut eget eros sit amet tellus interdum mattis. Donec gravida, purus ullamcorper ultrices cursus, massa libero venenatis lacus, ut iaculis neque lacus et ipsum. Quisque tempus scelerisque ornare.</p>
 </div>
 
-<!-- caselle delle 4 materie di stem -->
-<div class="caselle">
-  <div class="casella" id="casella_sx">
-    <!-- scienze -->
-  <a href="#"><img class="img_caselle" src="./images/scienze.png" alt=""></a>
-  <h1>Scienza</h1>
-  <h2>Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</h2>
-  </div>
-<!-- tecnologia -->
-  <div class="casella">
-  <a href="#"><img class="img_caselle" src="./images/tecnologia.png" alt=""></a>
-  <h1>Tecnologia</h1>
-
-
-  <h2>Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</h2>
-  </div>
-<!-- ingenieria -->
-  <div id="ingenieria"class="casella">
-  <a href="#"><img  class="img_caselle" src="./images/ingenieria.png" alt=""></a>
-  <h1>Ingenieria</h1>
-  <h2>Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</h2>
-  </div>
-  <!-- matematica -->
-  <div class="casella" id="casella_dx">
-  <a href="#"><img class="img_caselle" src="./images/matematica.png" alt=""></a>
-  <h1>Matematica</h1>
-  <h2>Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</h2>
-  </div>
-
-
-</div>
-<!-- testo scopri-->
-<div class="testo_scopri">
-<h1> Scopri </h1>
-<h2> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et commodo neque. Sed id iaculis nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam sed interdum arcu, ac dignissim justo. Aliquam finibus sed ipsum et scelerisque. In efficitur luctus nisi, varius eleifend purus pharetra ut. Mauris congue leo nibh, ac mattis purus aliquam eget. Donec vel nunc a mauris hendrerit laoreet. Praesent pharetra commodo sollicitudin. Morbi vitae lorem a magna accumsan ultrices id non felis. Vestibulum tincidunt fringilla auctor. Quisque ut tincidunt massa, consequat vehicula quam. Maecenas ut ultricies ex. </h2>
-</div>
-<!-- immagini dello scopri -->
 <div class="immagini_scopri">
  <img src="./images/sample_1.jpg" alt="1">
  <img src="./images/sample_2.jpg" alt="2">
- <img src="./images/sample_4.jpg" alt="3">
 </div>
 
 <!-- slideshow delle immagini -->
@@ -177,15 +129,18 @@ $("#close_icon").hide()
 
 Nulla fermentum placerat consectetur. Phasellus lorem purus, iaculis quis blandit sed, vehicula et ex. Maecenas accumsan nisi posuere urna tristique vestibulum. Integer a molestie lacus, eget sollicitudin enim. Vestibulum imperdiet, erat sit amet luctus ullamcorper, tellus magna lobortis orci, ut luctus nisi tellus ac elit. Sed pretium eros ante, ac egestas lacus cursus et. Aliquam posuere erat arcu, et facilisis nisl posuere ac. Proin sagittis consequat ex. Vivamus justo purus, porta et luctus hendrerit, finibus non nisl.</p>
 </div>
+
+<div class="spiegazione_div">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et libero pellentesque, ultrices dolor non, iaculis est. Phasellus iaculis, orci ac gravida efficitur, erat odio dictum ligula, eu malesuada odio ligula in diam. Nunc pharetra justo posuere, pharetra sapien at, tempor elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec in efficitur lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+</div>
+<!--
 <div class="youtube_player">
   <iframe width="50%" height="800" src="https://youtube.com/embed/xzHiZ5H5FKc">
   </iframe>
 </div>
+-->
 
-
-
-<!-- fine del body centrale -->
-
+<br><br>
 <!-- footer del sito -->
 <footer>
 <h1>Realizzato da Riccardo Calligaro e Filippo Veggo �</h1>
