@@ -95,7 +95,7 @@ function()
           // se il testo e' uguale a qualcosa allora
           else {
             // dai due ai 4 anni
-            if (anni==2) {
+            if (anni>=1 && anni<=3) {
               //transazione che fa scomparire i vari input e testi
               $("#invia_anni").fadeOut(500)
               $("#anni").fadeOut(500)
@@ -111,29 +111,54 @@ function()
             {
               //mostra il gioco adatto
               $("#anni_testo").text("Scopri moltissimi giochi divertenti per la tua fascia d'eta' qui!")
-              $("#clementino_2").fadeIn(1000);
+              $("#clementoni").fadeIn(1000);
             }, 1000);
 
             }
 
-            if (anni>="4") {
+          
+
+            if (anni>=4 && anni<=8) {
+               //se anni == 14
+              $("#invia_anni").fadeOut(500)
+              $("#anni").fadeOut(500)
+              setTimeout(
+            function()
+            {
+
+              $("#invia_anni").hide()
+              $("#anni").hide()
+            }, 1000);
+            setTimeout(
+            function()
+            {
+              $("#anni_testo").text("Scopri Lego! Clicca sull'immagine per maggiori informazioni.")
+              $("#lego").css("width", "400px")
+               $("#lego").css("margin-top", "20px")
+              $("#lego").fadeIn(1000);
+            }, 500);
 
             }
 
-            if (anni>="7") {
+           
 
-            }
+            if (anni>=9 && anni<=13) {
+              $("#invia_anni").fadeOut(500)
+              $("#anni").fadeOut(500)
+              setTimeout(
+            function()
+            {
 
-            if (anni>="10") {
-
-            }
-
-            if (anni>="12") {
-
-            }
-
-            if (anni>="13") {
-
+              $("#invia_anni").hide()
+              $("#anni").hide()
+            }, 1000);
+            setTimeout(
+            function()
+            {
+              $("#anni_testo").text("Scopri Lego Mindstorms! Clicca sull'immagine per maggiori informazioni.")
+              $("#10anni").css("width", "150px");
+              $("#10anni").fadeIn(1000);
+            }, 500);
             }
 
             if (anni=="14") {
@@ -157,8 +182,28 @@ function()
 
             }
 
+            if (anni>14 && anni<60) {
+               //se anni == 14
+              $("#invia_anni").fadeOut(500)
+              $("#anni").fadeOut(500)
+              setTimeout(
+            function()
+            {
+
+              $("#invia_anni").hide()
+              $("#anni").hide()
+            }, 1000);
+            setTimeout(
+            function()
+            {
+              $("#anni_testo").text("Scopri Arduino! Clicca sull'immagine per maggiori informazioni.")
+              $("#14anni").css("width", "220px")
+              $("#14anni").fadeIn(1000);
+            }, 500);
+
+            }
 //se si inserisce data fasulla
-            if (anni>100) {
+            if (anni>=100) {
               $("#anni_testo").text("Sei troppo vecchio! 😂")
               $("#invia_anni").addClass('animated shake');
               $("#invia_anni").addClass('button_border');
@@ -167,7 +212,7 @@ function()
               });
             }
 //se non sono presenti giochi adatti
-            if (anni > 20) {
+            if (anni >= 60 && anni<100) {
               $("#anni_testo").text("Non abbiamo giochi adatti per te! 😞")
               $("#invia_anni").addClass('animated shake');
               $("#invia_anni").addClass('button_border');

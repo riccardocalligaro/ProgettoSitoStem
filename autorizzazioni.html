@@ -1,0 +1,184 @@
+<!-- progetto realizzato da Riccardo Calligaro e Filippo Veggo versione 1.0
+tutti i font e le icone utilizzate sono legalmente utilizzabili (Google Font e Font Awesome)
+
+HTML e CSS realizzato da Riccardo Calligaro e Filippo Veggo
+Javascript realizzato da Riccardo Calligaro
+
+progetto informatica 2017/2018 -->
+
+<!DOCTYPE html>
+<html>
+
+<!-- link a tutti i file necessari -->
+  <head>
+
+    <!-- link ai file javcascript e css contenuti nella cartella -->
+    <link rel="stylesheet" href="./css/master.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <!-- font da google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/slick.css"/>
+<link rel="stylesheet" type="text/css" href="./css/slick-theme.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+    <link rel="stylesheet" href="./css/master.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <meta charset="utf-8">
+    <title>Stem | Home</title>
+
+
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+      <script>
+        $(document).ready(function(){
+          $('.slider').bxSlider();
+        });
+      </script>
+
+
+  </head>
+  <body>
+
+<!-- parte superiore del sito web, div contenente la navbar, e i form -->
+
+<header>
+
+
+<!-- navbar del sito dalla versione web  sopra gli 815px-->
+  <div class="container_superiore">
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">home</li></a>
+        <li><a href="#">scopri</li></a>
+        <li><a href="#">galleria</li> </a>
+      </ul>
+    </nav>
+<!-- bottone per aprire la navigation bar da mobile < 815 px -->
+    <div class="button_mobile">
+      <a href="#" id="nav_bar_mobile_button"><i class="fa fa-bars fa-2x mobile_open"  id="bottone_mobile"aria-hidden="true"></i></a>
+    </div>
+
+<!-- bottone / icona per chiudere la navigation bar da mobile < 815px-->
+<div class="button_close">
+<i class="fa fa-times-circle fa-2x" id="close_icon" aria-hidden="true"></i>
+<!-- script che non carica l'icona quando si apre il sito, in modo da allegerire il caricamento da parte dell'utente -->
+<script type="text/javascript">
+$("#close_icon").hide()
+</script>
+</div>
+
+<!-- navbar presente nella versione mobile < 815 px -->
+
+    <div class="navbar_mobile">
+      <li><a href="index.html">home</li></a>
+      <li><a href="#">scopri</li></a>
+      <li><a href="#">galleria</li> </a>
+    </div>
+  </div>
+
+<!-- script che nasconde la nav bar da mobile senza nemmeno caricarla in modo da alleggerire il caricamento da parte dell'utente -->
+
+  <script type="text/javascript">
+       $(".navbar_mobile").hide();
+   </script>
+
+<!-- il div testo racchiude tutta la parte del quiz che chiede nome ed eta', la maggior parte degli elementi sono nascosti senza nemmeno essere caricati -->
+  <div class="testo">
+<div class="nome_div">
+<!-- prima pagina dell quiz iniziale, chiede il nome -->
+  <h2 id="mostra">vuoi, </h2>
+  <input id="nome"type="text" name="" value="">
+
+<!-- seconda pagina del quiz iniziale, chiede quanti anni -->
+
+  <h2 id="anni_testo">Quanti anni hai </h2>
+  <script type="text/javascript">
+       $("#anni_testo").hide();
+   </script>
+
+<!-- textbox di input deglia anni -->
+  <input id="anni" type="text" name="" value="">
+  <script type="text/javascript">
+       $("#anni").hide();
+   </script>
+
+
+<!-- immagini dei vari giochi alle diverse fasce d'eta', sono nascosti tutti senza essere nemmeno caricati -->
+
+<!-- anni 2 -->
+   <img id="clementino_2" src="./images/clementino_2.jpg" alt="" class="img_header">
+   <script type="text/javascript">
+        $("#clementino_2").hide();
+    </script>
+
+<!-- anni 3 -->
+
+<!-- anni 4 -->
+
+<!--anni 5 -->
+
+<!--anni 6 -->
+
+<!-- anni 7 -->
+
+<!-- anni 8 -->
+
+<!-- anni 9 -->
+
+<!-- anni 10 -->
+<img id="10anni" src="./images/10anni.png" alt="" class="img_header">
+<script type="text/javascript">
+     $("#10anni").hide();
+ </script>
+<!-- anni 11 -->
+
+<!-- anni 12 -->
+
+<!-- anni 13 -->
+
+<!-- anni 14 -->
+  <a href="https://www.arduino.cc/"><img id="14anni" src="./images/14anni.png" alt="" class="img_header"></a>
+    <script type="text/javascript">
+         $("#14anni").hide();
+     </script>
+<!-- anni 20 ++ -->
+
+</div>
+
+  </div>
+
+<!-- bottone invia nome nell'header -->
+<button class="bottone_header" id="invia_nome"type="button" name="button">Invia</button>
+<!-- bottone invia anni nell'header -->
+<button class="bottone_header" id="invia_anni"type="button" name="button">Invia anni</button>
+<!-- nasconde il bottone invia anni nell'header -->
+<script type="text/javascript">
+     $("#invia_anni").hide();
+ </script>
+</header>
+
+
+
+
+<!-- fine del body centrale -->
+
+<!-- footer del sito -->
+<footer>
+<h1>Realizzato da Riccardo Calligaro e Filippo Veggo �</h1>
+<h3>Classe 2E ITIS Zuccante</h3>
+<h2>Tutti i permessi di vario genere per utilizzare le immagini e librerie presenti in questo sito sono presenti sulla pagina <a href="autorizzazioni.html">autorizzazioni</a></h2>
+</footer>
+  </body>
+
+
+  <!-- link allo script contenente tutti i comandi js -->
+  <script src="./js/main.js"></script>
+
+</html>
