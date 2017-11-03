@@ -8,49 +8,35 @@ progetto informatica 2017/2018 -->
 
 <!DOCTYPE html>
 <html>
-
 <!-- link a tutti i file necessari -->
   <head>
-
     <!-- link ai file javcascript e css contenuti nella cartella -->
     <link rel="stylesheet" href="./css/master.css">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
     <!-- font da google fonts -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
         <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/slick.css"/>
 <link rel="stylesheet" type="text/css" href="./css/slick-theme.css"/>
-
     <script type="text/javascript" src="./js/slick.min.js"></script>
     <link rel="stylesheet" href="./css/master.css">
     <link rel="stylesheet" href="./css/animate.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stem | Home</title>
-
-
-
       <link rel="stylesheet" href="./css/jquery.bxslider.css">
-
       <script src="./js/jquery.bxslider.min.js"></script>
       <script>
         $(document).ready(function(){
           $('.slider').bxSlider();
         });
       </script>
-
-
   </head>
   <body>
-
 <!-- parte superiore del sito web, div contenente la navbar, e i form -->
-
 <header>
-
-
 <!-- navbar del sito dalla versione web  sopra gli 815px-->
   <div class="container_superiore">
     <nav class="menu">
@@ -64,7 +50,6 @@ progetto informatica 2017/2018 -->
     <div class="button_mobile">
       <a href="#" id="nav_bar_mobile_button"><i class="fa fa-bars fa-2x mobile_open"  id="bottone_mobile"aria-hidden="true"></i></a>
     </div>
-
 <!-- bottone / icona per chiudere la navigation bar da mobile < 815px-->
 <div class="button_close">
 <i class="fa fa-times-circle fa-2x" id="close_icon" aria-hidden="true"></i>
@@ -73,59 +58,43 @@ progetto informatica 2017/2018 -->
 $("#close_icon").hide()
 </script>
 </div>
-
 <!-- navbar presente nella versione mobile < 815 px -->
-
     <div class="navbar_mobile">
       <liid="a_premuto_navbar"><a class="current" href="index.html">home</li></a>
       <li id="a_premuto_navbar"><a href="scopri.html">scopri</li></a>
       <li id="a_premuto_navbar"><a href="contatti.html">contatti</li> </a>
-
     </div>
   </div>
-
 <!-- script che nasconde la nav bar da mobile senza nemmeno caricarla in modo da alleggerire il caricamento da parte dell'utente -->
-
   <script type="text/javascript">
        $(".navbar_mobile").hide();
    </script>
-
 <!-- il div testo racchiude tutta la parte del quiz che chiede nome ed eta', la maggior parte degli elementi sono nascosti senza nemmeno essere caricati -->
   <div class="testo">
 <div class="nome_div">
 <!-- prima pagina dell quiz iniziale, chiede il nome -->
   <h2 id="mostra">ciao, come ti chiami? </h2>
   <input id="nome"type="text" name="" value="">
-
 <!-- seconda pagina del quiz iniziale, chiede quanti anni -->
-
   <h2 id="anni_testo">Quanti anni hai </h2>
   <script type="text/javascript">
        $("#anni_testo").hide();
    </script>
-
 <!-- textbox di input deglia anni -->
   <input id="anni" type="text" name="" value="">
   <script type="text/javascript">
        $("#anni").hide();
    </script>
-
-
 <!-- immagini dei vari giochi alle diverse fasce d'eta', sono nascosti tutti senza essere nemmeno caricati -->
-
 <!-- anni 2 -->
   <a href="https://www.amazon.it/s/ref=s9_acss_bw_cg_STEM_3a1_w?__mk_it_IT=%C5M%C5Z%D5%D1&rh=i%3Atoys%2Cn%3A523997031%2Cn%3A%21600761031%2Cn%3A%21600762031%2Cn%3A13494296031%2Cp_n_age_range%3A633755031&bbn=13494296031&ie=UTF8&pf_rd_m=A2VX19DFO3KCLO&pf_rd_s=merchandised-search-3&pf_rd_r=ZHA28QZYCKBMGNPFG2K4&pf_rd_t=101&pf_rd_p=a4385a5c-e8d9-49a7-9014-974cf1a7dfe7&pf_rd_i=13494296031"><img id="clementoni" src="./images/clementoni.png" alt="" class="img_header"></a>
    <script type="text/javascript">
         $("#clementoni").hide();
-
     </script>
-
 <a href="https://www.amazon.it/s/ref=nb_sb_noss?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&url=search-alias%3Dtoys&field-keywords=lego+&rh=n%3A523997031%2Ck%3Alego+"><img id="lego" src="./images/lego.png" alt="" class="img_header"></a>
 <script type="text/javascript">
      $("#lego").hide();
  </script>
-
-
  <a href="https://www.amazon.it/s/ref=nb_sb_noss?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&url=search-alias%3Dtoys&field-keywords=lego+&rh=n%3A523997031%2Ck%3Alego+"><img id="lego_mobile" src="./images/lego_mobile.png" alt="" class="img_header"></a>
  <script type="text/javascript">
       $("#lego_mobile").hide();
@@ -136,22 +105,16 @@ $("#close_icon").hide()
      $("#10anni").hide();
  </script>
 <!-- anni 11 -->
-
 <!-- anni 12 -->
-
 <!-- anni 13 -->
-
 <!-- anni 14 -->
   <a href="https://www.arduino.cc/"><img id="14anni" src="./images/14anni.png" alt="" class="img_header"></a>
     <script type="text/javascript">
          $("#14anni").hide();
      </script>
 <!-- anni 20 ++ -->
-
 </div>
-
   </div>
-
 <!-- bottone invia nome nell'header -->
 <button class="bottone_header" id="invia_nome"type="button" name="button">Invia</button>
 <!-- bottone invia anni nell'header -->
@@ -161,8 +124,6 @@ $("#close_icon").hide()
      $("#invia_anni").hide();
  </script>
 </header>
-
-
 <!-- inizio contenuto centrale del sito web -->
 <div class="body_centrale">
 <!-- div che indica di cosa si tratta Stem -->
@@ -172,7 +133,6 @@ $("#close_icon").hide()
 <!-- paragrafo esplicativo -->
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at felis mauris. Nam lacinia nulla lorem, vel molestie arcu gravida ut. Sed sed venenatis lorem, sit amet pharetra ligula. Ut eget eros sit amet tellus interdum mattis. Donec gravida, purus ullamcorper ultrices cursus, massa libero venenatis lacus, ut iaculis neque lacus et ipsum. Quisque tempus scelerisque ornare.</p>
 </div>
-
 <!-- caselle delle 4 materie di stem -->
 <div class="caselle">
   <div class="casella" id="casella_sx">
@@ -185,14 +145,12 @@ $("#close_icon").hide()
   <div class="casella">
   <a href="#"><img class="img_caselle" src="./images/tecnologia.png" alt=""></a>
   <h1>Tecnologia</h1>
-
-
   <h2>Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</h2>
   </div>
-<!-- ingenieria -->
+<!-- ingegneria -->
   <div id="ingenieria"class="casella">
   <a href="#"><img  class="img_caselle" src="./images/ingenieria.png" alt=""></a>
-  <h1>Ingenieria</h1>
+  <h1>Ingegneria</h1>
   <h2>Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</h2>
   </div>
   <!-- matematica -->
@@ -202,26 +160,18 @@ $("#close_icon").hide()
   <h2>Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</h2>
   </div>
 </div>
-
 <!-- slideshow delle immagini -->
 </div>
-
 <div class="grey_div" id="div_scopri_2">
-
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur faucibus finibus sapien, eget rutrum quam bibendum a. Ut tincidunt metus non urna tincidunt, a sollicitudin orci ultrices. Nam tristique pharetra ornare. Sed posuere ac urna et tincidunt. Sed consequat cursus tempus. Donec vehicula leo nec ante maximus consectetur. Nam eu orci metus. Suspendisse imperdiet velit ac orci iaculis venenatis.
-
 Nulla fermentum placerat consectetur. Phasellus lorem purus, iaculis quis blandit sed, vehicula et ex. Maecenas accumsan nisi posuere urna tristique vestibulum. Integer a molestie lacus, eget sollicitudin enim. Vestibulum imperdiet, erat sit amet luctus ullamcorper, tellus magna lobortis orci, ut luctus nisi tellus ac elit. Sed pretium eros ante, ac egestas lacus cursus et. Aliquam posuere erat arcu, et facilisis nisl posuere ac. Proin sagittis consequat ex. Vivamus justo purus, porta et luctus hendrerit, finibus non nisl.</p>
 </div>
-
 <div class="slider">
   <div><img src="./images/sample_1.jpg" alt=""></div>
   <div><img src="./images/sample_2.jpg" alt=""></div>
   <div><img src="./images/sample_3.jpg" alt=""></div>
 </div>
-
-
 <!-- fine del body centrale -->
-
 <!-- footer del sito -->
 <footer>
 <h1>Realizzato da Riccardo Calligaro e Filippo Veggo ©</h1>
@@ -229,9 +179,6 @@ Nulla fermentum placerat consectetur. Phasellus lorem purus, iaculis quis blandi
 <h2>Tutti i permessi di vario genere per utilizzare le immagini e librerie presenti in questo sito sono presenti sulla pagina <a href="autorizzazioni.html">autorizzazioni</a></h2>
 </footer>
   </body>
-
-
   <!-- link allo script contenente tutti i comandi js -->
   <script src="./js/main.js"></script>
-
 </html>

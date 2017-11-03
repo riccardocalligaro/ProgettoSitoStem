@@ -8,10 +8,8 @@ progetto informatica 2017/2018 -->
 
 <!DOCTYPE html>
 <html>
-
 <!-- link a tutti i file necessari -->
   <head>
-
     <!-- link ai file javcascript e css contenuti nella cartella -->
     <link rel="stylesheet" href="./css/master.css">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
@@ -22,7 +20,6 @@ progetto informatica 2017/2018 -->
     <link rel="stylesheet" type="text/css" href="./css/slick.css"/>
 <link rel="stylesheet" type="text/css" href="./css/slick-theme.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="./js/slick.min.js"></script>
@@ -30,27 +27,18 @@ progetto informatica 2017/2018 -->
     <link rel="stylesheet" href="./css/animate.css">
     <meta charset="utf-8">
     <title>Stem | Home</title>
-
-
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-
       <script>
         $(document).ready(function(){
           $('.slider').bxSlider();
         });
       </script>
-
-
   </head>
   <body>
-
 <!-- parte superiore del sito web, div contenente la navbar, e i form -->
-
 <header>
-
-
 <!-- navbar del sito dalla versione web  sopra gli 815px-->
   <div class="container_superiore">
     <nav class="menu">
@@ -64,7 +52,6 @@ progetto informatica 2017/2018 -->
     <div class="button_mobile">
       <a href="#" id="nav_bar_mobile_button"><i class="fa fa-bars fa-2x mobile_open"  id="bottone_mobile"aria-hidden="true"></i></a>
     </div>
-
 <!-- bottone / icona per chiudere la navigation bar da mobile < 815px-->
 <div class="button_close">
 <i class="fa fa-times-circle fa-2x" id="close_icon" aria-hidden="true"></i>
@@ -73,39 +60,28 @@ progetto informatica 2017/2018 -->
 $("#close_icon").hide()
 </script>
 </div>
-
 <!-- navbar presente nella versione mobile < 815 px -->
-
     <div class="navbar_mobile">
       <li id="a_premuto_navbar"><a href="index.html">home</li></a>
       <li id="a_premuto_navbar"><a href="scopri.html">scopri</li></a>
       <li id="a_premuto_navbar"><a  class="current"  href="contatti.html">contatti</li> </a>
     </div>
   </div>
-
-<!-- script che nasconde la nav bar da mobile senza nemmeno caricarla in modo da alleggerire il caricamento da parte dell'utente -->
-
+  <!-- script che nasconde la nav bar da mobile senza nemmeno caricarla in modo da alleggerire il caricamento da parte dell'utente -->
   <script type="text/javascript">
        $(".navbar_mobile").hide();
    </script>
-
 <!-- il div testo racchiude tutta la parte del quiz che chiede nome ed eta', la maggior parte degli elementi sono nascosti senza nemmeno essere caricati -->
   <div class="testo">
 <div class="nome_div">
 <!-- prima pagina dell quiz iniziale, chiede il nome -->
   <h2 id="contatti_testo">che problemi ci sono? 😕 </h2>
   <input id="contatti_messaggio" type="text" name="" value="">
-
 </div>
-
   </div>
-
 <!-- bottone invia nome nell'header -->
 <button class="bottone_header" id="invia_contatti"type="button" name="button">Invia</button>
-
 </header>
-
-
 <!-- inizio contenuto centrale del sito web -->
 <div class="body_contatti">
 <div class="div_sviluppatori">
@@ -116,7 +92,6 @@ $("#close_icon").hide()
     <button type="submit">Invia</button>
   </form>
 </div>
-
 <div class="div_scuola">
   <h1>Scrivi alla scuola...</h1>
   <form method="POST" action="http://formspree.io/riccardocalligaro@gmail.com"><br>
@@ -126,12 +101,7 @@ $("#close_icon").hide()
   </form>
 </div>
 </div>
-
-
-
-
 <!-- fine del body centrale -->
-
 <!-- footer del sito -->
 <footer>
 <h1>Realizzato da Riccardo Calligaro e Filippo Veggo �</h1>
@@ -139,9 +109,6 @@ $("#close_icon").hide()
 <h2>Tutti i permessi di vario genere per utilizzare le immagini e librerie presenti in questo sito sono presenti sulla pagina <a href="autorizzazioni.html">autorizzazioni</a></h2>
 </footer>
   </body>
-
-
   <!-- link allo script contenente tutti i comandi js -->
   <script src="./js/main.js"></script>
-
 </html>
